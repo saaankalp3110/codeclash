@@ -21,14 +21,4 @@ We worked on the Software Part (AI-Based Processing & Detection)
    
    
 
-References:
-
-@inproceedings{Zamir2021MPRNet,
-    title={Multi-Stage Progressive Image Restoration},
-    author={Syed Waqas Zamir and Aditya Arora and Salman Khan and Munawar Hayat
-            and Fahad Shahbaz Khan and Ming-Hsuan Yang and Ling Shao},
-    booktitle={CVPR},
-    year={2021}
-}
-
 
