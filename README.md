@@ -1,4 +1,4 @@
-# codeclash
+# IEEE codeclash
 
 Group Members: Jacob Lister, Wyatt Shepherd, Dominik Shramek, Sankalp Sinha
 
