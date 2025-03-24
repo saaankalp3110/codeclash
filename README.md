@@ -3,6 +3,7 @@
 Group Members: Jacob Lister, Wyatt Shepherd, Dominik Shramek, Sankalp Sinha
 
 We worked on the Software Part (AI-Based Processing & Detection)
+
 1 -> Machine Learning-Based Object Detection in Foggy and Rainy Conditions   
 2 -> AI-Powered Risk Assessment and Adaptive Decision-Making System   
 
