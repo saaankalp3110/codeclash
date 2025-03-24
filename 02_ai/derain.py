@@ -66,7 +66,7 @@ print(f"Found {len(files)} images in {inp_dir}")
 
 # Load model architecture and weights
 print("Loading model...")
-load_file = run_path('C:/Users/saaan/Documents/MPRNet/Deraining/MPRNet.py')
+load_file = run_path('codeclash/02_ai/derain.py')
 model = load_file['MPRNet']()
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 model.to(device)
