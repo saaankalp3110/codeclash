@@ -28,7 +28,7 @@ def calculate_IoU(rect1, rect2):
     return intersection_area/union_area
 
 #Run command for YOLO neural network
-def runYOLO(image, YOLO_model='yolov8m.pt', dehaze=False, derain=False):
+def runYOLO(image, YOLO_model='yolov8m.pt', dehaze=False, derain=False, denoise=False):
 
     #Dummy list for coordinate storage and passing
     rect=[]
@@ -36,11 +36,14 @@ def runYOLO(image, YOLO_model='yolov8m.pt', dehaze=False, derain=False):
     # Load YOLO model (in case of changes)
     model = YOLO(YOLO_model)
     
-    # Run any deraining/dehazing. Brighten final product. Pass said product into YOLO for analysis
+    # Run any deraining/dehazing/denoising. Brighten final product. Pass said product into YOLO for analysis
     if derain==True:
         image = cv2.fastNlMeansDenoisingColored(image, None, 10, 10, 7, 21)
     if dehaze==True:
         image, _ = image_dehazer.remove_haze(image)
+    if denoise==True:
+        image = cv2.GaussianBlur(image, (5,5), 0)
+    
     image=cv2.convertScaleAbs(image, alpha=1, beta=50)
     results = model(image)
 
