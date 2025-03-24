@@ -10,7 +10,7 @@ from sort import Sort
 model = YOLO('yolov8m.pt')  # This will auto-download if it's not in your directory
 
 # Open video capture
-cap = cv2.VideoCapture("C:/Users/saaan/Documents/Videos/test_drive.mp4")  # Replace with your video file path
+cap = cv2.VideoCapture("codeclash/03_collision_risk/test/test_drive.mp4")  #change path
 
 # Class names for YOLO
 classNames = ["person", "bicycle", "car", "motorbike", "aeroplane", "bus", "train", "truck", "boat",
